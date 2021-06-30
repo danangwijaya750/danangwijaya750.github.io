@@ -94,7 +94,7 @@ function printHelp(){
 
     helpOutput += "<tr>";
     helpOutput += "<td>summary-text</td>"
-    helpOutput += "<td>Create Text Summarization. format summary-text \<your text\> example (summary-text Aku seorang kapiten yang hidup di gurun pasir.) </td>"
+    helpOutput += "<td>Create Text Summarization. format summary-text &lt;your text here&gt; example (summary-text Aku seorang kapiten yang hidup di gurun pasir.) </td>"
     helpOutput += "</tr>";
 
 
