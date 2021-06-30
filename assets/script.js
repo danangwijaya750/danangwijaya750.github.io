@@ -33,9 +33,7 @@ $("#div2").on("click", function(e) {
 });
 
 $("#div2").on("click", function(e) {
-
     e.stopPropagation();
-
 });
 
 function printOutput(text){
