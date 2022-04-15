@@ -11,7 +11,9 @@ $("#console-container").on('keyup', "#user-input",function (e) {
             case 'print-all':
                 printAllCommand();
                 break;
-            case 'summarization':
+            case 'summary':
+                break;
+            case 'qg':
                 break;
             default:
                 const notFoundText = "<p>Command not found!</p>"
@@ -45,7 +47,7 @@ function printOutput(text){
 }
 
 function summarization(){
-
+    
 }
 
 function prompt(text){
@@ -91,12 +93,21 @@ function printHelp(){
     // }
 
     helpOutput += "<tr>";
-    helpOutput += "<td>summary-text</td>"
+    helpOutput += "<td>summary</td>"
     helpOutput += "<td>Create Text Summarization</td>"
     helpOutput += "</tr>";
     helpOutput += "<tr>";
     helpOutput += "<td></td>";
-    helpOutput += "<td>format (summary-text your-text-here) example (summary-text Aku seorang kapiten yang hidup di gurun pasir.)</td>"
+    helpOutput += "<td>format (summary your-text-here) example (summary-text Aku seorang kapiten yang hidup di gurun pasir.)</td>"
+    helpOutput +="</tr>";
+    
+    helpOutput += "<tr>";
+    helpOutput += "<td>qg</td>"
+    helpOutput += "<td>Generate Question from your input paragraph</td>"
+    helpOutput += "</tr>";
+    helpOutput += "<tr>";
+    helpOutput += "<td></td>";
+    helpOutput += "<td>format (qg your-input-paragraph-here) example (qg Aku seorang kapiten yang hidup di gurun pasir.)</td>"
     helpOutput +="</tr>";
 
 
